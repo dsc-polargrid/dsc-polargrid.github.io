@@ -1,0 +1,551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <!-- panel-page.tpl.php -->
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+        <title>Image Processing for Automatical Layer Finding | Polar Grid | Indiana University Pervasive Technology Institute</title>
+        <meta name="keywords" content="Polar Grid, IU, Indiana University, Pervasive Technology Institute" />
+        <meta name="description"
+  content="Image Processing for Automatical Layer Finding" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="sites/default/themes/pti2/favicon.ico" type="image/x-icon" />
+        <link type="text/css" rel="stylesheet" media="all" href="modules/aggregator/aggregator.css" />
+<link type="text/css" rel="stylesheet" media="all" href="modules/book/book.css" />
+<link type="text/css" rel="stylesheet" media="all" href="modules/node/node.css" />
+<link type="text/css" rel="stylesheet" media="all" href="modules/system/defaults.css" />
+<link type="text/css" rel="stylesheet" media="all" href="modules/system/system.css" />
+<link type="text/css" rel="stylesheet" media="all" href="modules/system/system-menus.css" />
+<link type="text/css" rel="stylesheet" media="all" href="modules/user/user.css" />
+<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/cck/theme/content-module.css" />
+<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/ctools/css/ctools.css" />
+<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/date/date.css" />
+<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/date/date_popup/themes/datepicker.css" />
+<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/date/date_popup/themes/timeentry.css" />
+<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/filefield/filefield.css" />
+<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/panels/css/panels.css" />
+<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/switchtheme/switchtheme.css" />
+<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/calendar/calendar.css" />
+<link type="text/css" rel="stylesheet" media="all" href="misc/farbtastic/farbtastic.css" />
+<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/extlink/extlink.css" />
+<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/biblio/biblio.css" />
+<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/cck/modules/fieldgroup/fieldgroup.css" />
+<link type="text/css" rel="stylesheet" media="all" href="sites/all/modules/views/css/views.css" />
+<link type="text/css" rel="stylesheet" media="all" href="sites/default/themes/pti2/pti_layouts/pti_section/pti_section.css" />
+<link type="text/css" rel="stylesheet" media="all" href="sites/default/themes/pti2/style.css" />
+<link type="text/css" rel="stylesheet" media="all" href="sites/default/themes/pti2/panels-style.css" />
+<link type="text/css" rel="stylesheet" media="all" href="sites/default/themes/pti2/sysoutages-style.css" />
+        <script type="text/javascript" src="sites/all/modules/jquery_update/replace/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="misc/drupal.js"></script>
+<script type="text/javascript" src="sites/all/modules/panels/js/panels.js"></script>
+<script type="text/javascript" src="sites/all/modules/spamspan/spamspan.compressed.js"></script>
+<script type="text/javascript" src="sites/all/modules/extlink/extlink.js"></script>
+<script type="text/javascript" src="sites/default/modules/pti_helpers/ddblock-pti2.js"></script>
+<script type="text/javascript" src="sites/default/themes/pti2/suckerfish.js"></script>
+<script type="text/javascript" src="sites/default/themes/pti2/collapsible-menu.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "spamspan": { "m": "spamspan", "u": "u", "d": "d", "h": "h", "t": "t" }, "extlink": { "extTarget": "_blank", "extClass": 0, "extSubdomains": 0, "extExclude": "soic.indiana.edu", "extInclude": "", "extAlert": 0, "extAlertText": "This link will take you to an external web site. We are not responsible for their content.", "mailtoClass": 0 } });
+//--><!]]>
+</script>
+        
+    </head>
+
+    <body class="panel-page node-type-page">
+        
+        <div id="identity">
+           <div id="signature">
+               <a href="http://www.iu.edu/" class="iu"><img src="sites/default/themes/pti2/images/iu_signature.png" alt="Indiana University" width="171" height="44" /></a>	
+           </div> <!-- /#signature -->
+           <hr />
+
+        </div> <!-- /#identity -->
+        <div id="main-shadow-container" class="centering container">
+            <div id="main-container" class="container">
+                    <div id="content">
+                                                                                                                        
+<div class="panel-display panel-pti-section clear-block iu-crimson"
+     >
+  <div id="panel-pti-title-bar" class="panel-panel">
+    <div class="inside"><div class="panel-pane pane-custom pane-4" >
+  
+  
+  
+  <div class="pane-content">
+    <a href="index.html">Polar Grid</a>  </div>
+
+  
+  </div>
+</div>
+  </div>
+  <div id="panel-pti-nav-bar" class="panel-panel">
+    <div class="inside"><div class="panel-pane pane-custom pane-2" >
+  
+  
+  
+  <div class="pane-content">
+    &nbsp;  </div>
+
+  
+  </div>
+</div>
+  </div>
+  <div id="panel-pti-left-col" class="panel-panel panel-col">
+    <div class="inside"><div class="panel-pane pane-block pane-block-26" >
+  
+  
+  
+  <div class="pane-content">
+    <p style="text-align: center;"><img src="sites/default/files/images/pglogothickborder.png" alt="" width="146" height="146" /></p>  </div>
+
+  
+  </div>
+<div class="panel-region-separator"></div><div class="panel-pane pane-custom pane-1 block-menu" >
+  
+  
+  
+  <div class="pane-content">
+    <ul class="menu"><li class="leaf first"><a href="index.html" title="Main Polar Grid Page">Home</a></li>
+<li class="collapsed"><a href="about.html" title="About">About</a></li>
+<li class="leaf"><a href="education-and-outreach.html" title="Events">Education and Outreach</a></li>
+<li class="leaf"><a href="team-members.html" title="Team Members">Team Members</a></li>
+<li class="expanded active-trail"><a href="cyberinfrastructure.html" title="Projects">Projects</a><ul class="menu"><li class="collapsed first"><a href="cyberinfrastructure.html" title="Cyberinfrastructure">Cyberinfrastructure</a></li>
+<li class="leaf"><a href="cloud-gis-service.html" title="Cloud Distribution of Spatial Data">Cloud GIS Service</a></li>
+<li class="leaf"><a href="3d-visualization-ice-sheets.html" title="3D Visualization of Ice Sheets">Visualization</a></li>
+<li class="leaf active-trail"><a href="image-processing-automatical-layer-finding.html" title="Image Processing for Automatical Layer Finding" class="active">Image Processing</a></li>
+<li class="leaf last"><a href="software-release.html" title="Software Release">Software Release</a></li>
+</ul></li>
+<li class="leaf"><a href="publications-and-presentations.html" title="Publications and Presentations">Publications and Presentations</a></li>
+<li class="leaf last"><a href="gallery.html" title="Polar Grid Multimedia Gallery">Multimedia</a></li>
+</ul>  </div>
+
+  
+  </div>
+</div>
+  </div>
+  <div id="panel-pti-subtitle-bar" class="panel-panel">
+    <div class="inside"><div class="panel-pane pane-custom pane-3" >
+  
+  
+  
+  <div class="pane-content">
+    <h3>
+Image Processing for Automatical Layer Finding</h3>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+  <div id="panel-pti-spotlight"
+       class="panel-panel"
+  >
+    <div class="inside"></div>
+  </div>
+  <div id="panel-pti-main" class="panel-panel">
+    <div class="inside"><div class="panel-pane pane-node-content"  id="content-container">
+  
+  
+  
+  <div class="pane-content">
+    <div id="node-15890" class="node">
+
+
+
+  <div class="meta">
+    </div>
+
+  <div class="content">
+  <p>
+
+
+
+
+
+
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Revision>0</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Pages>1</o:Pages>
+  <o:Words>72</o:Words>
+  <o:Characters>413</o:Characters>
+  <o:Company>Indiana University</o:Company>
+  <o:Lines>3</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>484</o:CharactersWithSpaces>
+  <o:Version>14.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG ></o>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves ></w>
+  <w:TrackFormatting ></w>
+  <w:PunctuationKerning ></w>
+  <w:ValidateAgainstSchemas ></w>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF ></w>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables ></w>
+   <w:SnapToGridInCell ></w>
+   <w:WrapTextWithPunct ></w>
+   <w:UseAsianBreakRules ></w>
+   <w:DontGrowAutofit ></w>
+   <w:SplitPgBreakAndParaMark ></w>
+   <w:EnableOpenTypeKerning ></w>
+   <w:DontFlipMirrorIndents ></w>
+   <w:OverrideTableStyleHps ></w>
+   <w:UseFELayout ></w>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math" ></m>
+   <m:brkBin m:val="before" ></m>
+   <m:brkBinSub m:val="&#45;-" ></m>
+   <m:smallFrac m:val="off" ></m>
+   <m:dispDef ></m>
+   <m:lMargin m:val="0" ></m>
+   <m:rMargin m:val="0" ></m>
+   <m:defJc m:val="centerGroup" ></m>
+   <m:wrapIndent m:val="1440" ></m>
+   <m:intLim m:val="subSup" ></m>
+   <m:naryLim m:val="undOvr" ></m>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="276">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal" ></w>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1" ></w>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" ></w>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" ></w>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" ></w>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" ></w>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" ></w>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" ></w>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" ></w>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" ></w>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1" ></w>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2" ></w>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3" ></w>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4" ></w>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5" ></w>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6" ></w>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7" ></w>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8" ></w>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9" ></w>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" ></w>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title" ></w>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" ></w>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle" ></w>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong" ></w>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis" ></w>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid" ></w>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" ></w>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing" ></w>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading" ></w>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List" ></w>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid" ></w>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1" ></w>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2" ></w>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1" ></w>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2" ></w>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1" ></w>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2" ></w>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3" ></w>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List" ></w>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading" ></w>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List" ></w>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid" ></w>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1" ></w>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1" ></w>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1" ></w>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" ></w>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" ></w>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1" ></w>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" ></w>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" ></w>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote" ></w>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" ></w>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1" ></w>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" ></w>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" ></w>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" ></w>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1" ></w>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1" ></w>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1" ></w>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1" ></w>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2" ></w>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2" ></w>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2" ></w>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" ></w>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" ></w>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2" ></w>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2" ></w>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" ></w>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" ></w>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" ></w>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2" ></w>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2" ></w>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2" ></w>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2" ></w>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3" ></w>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3" ></w>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3" ></w>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" ></w>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" ></w>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3" ></w>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3" ></w>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" ></w>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" ></w>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" ></w>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3" ></w>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3" ></w>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3" ></w>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3" ></w>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4" ></w>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4" ></w>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4" ></w>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" ></w>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" ></w>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4" ></w>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4" ></w>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" ></w>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" ></w>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" ></w>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4" ></w>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4" ></w>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4" ></w>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4" ></w>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5" ></w>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5" ></w>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5" ></w>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" ></w>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" ></w>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5" ></w>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5" ></w>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" ></w>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" ></w>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" ></w>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5" ></w>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5" ></w>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5" ></w>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5" ></w>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6" ></w>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6" ></w>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6" ></w>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" ></w>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" ></w>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6" ></w>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6" ></w>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" ></w>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" ></w>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" ></w>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6" ></w>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6" ></w>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6" ></w>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6" ></w>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" ></w>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" ></w>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" ></w>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" ></w>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title" ></w>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography" ></w>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" ></w>
+ </w:LatentStyles>
+</xml><![endif]-->
+
+<!--[if gte mso 10]>
+<mce:style><! 
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-fareast-language:ZH-CN;}
+-->
+<!--[endif] -->
+
+
+
+<!--StartFragment-->
+
+</p><p class="MsoListParagraph" style="margin-left: 0in; mso-add-space: auto;">David
+Crandall (<a href="https://www.cs.indiana.edu/~djcran/">https://www.cs.indiana.edu/~djcran/</a>),
+on the faculty at Indiana University introduced a Hidden Markov Method
+based<span style="mso-spacerun: yes;">&nbsp; </span>Layer Finding based on new
+approach reported in P. Felzenszwalb, O. Veksler, Tiered Scene Labeling with
+Dynamic Programming, IEEE Conference on Computer Vision and Pattern Recognition
+(CVPR), 2010. Current results are sufficiently encouraging that the new tool
+will be used in some production work.&nbsp;</p><p class="MsoListParagraph" style="margin-left: 0in; mso-add-space: auto;"><img src="sites/default/files/pgimgproc.png" alt="PolarGrid Image Processing" width="469" height="187" /></p><p class="MsoListParagraph" style="margin-left: 0in; mso-add-space: auto;">&nbsp;</p>
+
+<!--EndFragment-->  </div>
+
+  </div>
+  </div>
+
+  
+  </div>
+</div>
+  </div>
+</div>
+                    </div> <!-- /#content -->
+                </div> <!-- /#content-container -->
+                                <div id="footer">
+                    <hr />
+                                        <div id="block-iu">
+                        <a href="http://www.iu.edu/" title="Indiana University">
+                            <img src="sites/default/themes/pti2/images/blockiu_black.gif" alt="Block IU" width="22" height="28" />
+                       </a>
+                           
+                    </div>
+                    <div id="copyright">
+                   <p><a href="http://www.iu.edu/comments/copyright.shtml">Copyright</a> &copy; 2013 The Trustees of <a href="http://www.indiana.edu/">Indiana University</a> &#124; <a href="http://www.indiana.edu/comments/complaint.shtml">Copyright Complaints</a></p>
+                    </div> <!-- /#copyright -->
+                </div> <!-- /#footer -->
+            </div> <!-- /#main-container -->
+        </div> <!-- /#main-shadow-container -->
+            </body>
+</html>

@@ -1,0 +1,97 @@
+.panel-pti-gallery .pane-content {
+    padding: 10px;
+}
+.panel-page.node-type-videomedia #panel-pti-main .pane-content {
+    padding: 0px;
+}
+.pane-content .video-data {
+    padding: 10px;
+}
+
+/* Force floated items into parent container (clearfix technique) */
+.panel-pti-gallery #panel-pti-main:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;    
+}
+
+.panel-pti-gallery #panel-pti-main {
+	min-height: 300px; 
+}
+
+.panel-pti-gallery #panel-pti-main h2 {
+	margin: 0px;
+}
+
+.panel-pti-gallery #panel-pti-main img:hover {
+    cursor: pointer;
+}
+
+.panel-pti-gallery #panel-pti-main .pane-content {
+    padding: 10px 0px 10px 0px;
+}
+
+.panel-pti-gallery #panel-pti-main .views-row {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D6D6D6;
+    margin-bottom: 10px;
+}
+
+.panel-pti-gallery #panel-pti-main .views-row.views-row-last{
+    padding-bottom: 10px;
+    border-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.pane-videomedia .video-description,
+.pane-pti-image-gallery .views-field-image-gallery-count {
+    margin-top: 5px;
+    font-size: 0.8em;
+}
+
+.pane-videomedia .video-path,
+.pane-videomedia .video-low-res,
+.pane-videomedia .video-mobile,
+.pane-videomedia .poster-path,
+.pane-videomedia .video-duration {
+    display: none;
+}
+
+#waterwheelCarousel {
+    background-color: black;
+    height:190px;
+    width: 600px;
+}
+#waterwheelCarousel > span {
+    display: none;
+}
+
+#waterwheelCarousel img:hover {
+    cursor: pointer;
+}
+
+.acknowledgements {
+    text-align: center;
+    font-size: 10px;
+}
+.acknowledgements a {
+    display: block;
+}
+
+#panel-pti-spotlight .instructions {
+    padding-top: 5px;
+    color: white;
+    background-color: black;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.panel-region-separator {
+    display: none;
+}
+
+.gallery-list-all {
+    text-align: right;
+}

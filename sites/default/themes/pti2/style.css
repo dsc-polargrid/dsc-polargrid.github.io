@@ -1,0 +1,1913 @@
+/* Page-wide styles */
+
+body.front-page, body.inside-page, body.panel-page {
+    margin: 0;
+    padding: 0;
+
+    background-color: #33302C; /* white; */
+
+    text-align: center;
+
+    font-family: Arial, Helvetica, Sans-Serif !important;
+    font-size: 100%;
+}
+
+a {
+   font-weight: bold;
+   text-decoration: none;
+   color: #990000;
+}
+
+#signature
+{
+    padding-left: 80px;
+    text-align: left;
+}
+
+.striped {
+    background-image: url(images/diagonal_lines_background.png);
+}
+
+#main-container {
+    width: 800px;
+
+    margin: 0 auto 0 auto;
+
+    padding-left: 0;
+
+    background-image: none;
+    
+    text-align: left;
+}
+
+.front-page #main-container {
+    /* The left column will be shorter than the right column, so make the background of the container
+     * of both the background color of the left column 
+     */
+    background-color: white;
+}
+
+.inside-page #main-container {
+   /* 
+    * Fake it so the left-sidebar background color appears to 
+    * extend all the way to the bototm of the page 
+    */
+   background-color: #7D110C;    
+}
+
+.inside-page.iu-crimson #main-container {
+    background-color: #7D110C;
+}
+
+.inside-page.violet #main-container {
+    background-color: #6f679d;
+}
+
+.inside-page.olive #main-container {
+    background-color: #808a53;
+}
+
+.inside-page.leather #main-container {
+    background-color: #c78036;
+}
+
+.inside-page.midnight #main-container {
+    background-color: #2d637f;
+}
+
+.inside-page.dark-grey #main-container {
+	background-color: #6D6E70;
+}
+
+#main-shadow-container {
+    width: 832px;
+
+    background-image: url(images/main_container_shadow_background.png);
+    background-repeat: repeat-y;
+
+}
+
+.centering {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Branding bar styles */
+
+#identity {
+    height: 44px;
+
+    margin: 0 auto;
+
+    background-image: url(images/branding_bar_background.png);
+    background-repeat: repeat-x;
+    
+    color: white;
+    
+    font-size: 0.625em;
+    line-height: 1em;
+}
+
+#signature {
+    position: relative;
+    
+    height: 43px;
+    width: 780px;
+
+    margin: 0 auto;
+
+    text-align: left;
+
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#identity a {
+    color:#FFFFFF;
+    text-decoration:underline;
+}
+
+#identity #signature a.iu {
+    background:transparent url(images/iu_signature.png) no-repeat scroll 20px 0;
+    display:block;
+    height:44px;
+    left:-20px;
+    position:relative;
+    top:0;
+    width:250px;
+
+    float: left;
+}
+
+#identity #signature a.iu img {
+    display:none;
+}
+
+#identity hr {
+    display: none;
+}
+
+/* Search box styles */
+
+#identity #search {
+    height: 100%;
+    
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+#identity #search .form-item {
+    position: relative;
+    top: 10px;
+        
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.inside-page #identity #search {
+    margin-right: 2em;
+}
+
+#identity #search .form-text {
+    border:1px solid #C59D9A;
+    color:#616364;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    height:17px;
+    line-height:1em;
+    margin:0 6px 0 0;
+    min-height:13px;
+    padding:0px 4px 0;
+    width:9.3em;
+}
+
+#identity #search .form-submit {
+    position: relative;
+    top: 16px;
+}
+
+/* Banner styles */
+
+h1.banner {
+   height: 60px;
+   width: 800px;
+
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-left: auto;
+   margin-right: auto;
+
+   background-color: black;
+}
+
+h1.banner a {
+   display: block;
+   width: 100%;
+   height: 100%;
+    
+   background-image: url(images/banner-pti.gif);
+   background-repeat: no-repeat;
+   background-position: 10px center;
+}
+
+h1.banner a:hover {
+    background-image: url(images/banner-pti-hover.gif);
+}
+
+h1.banner a span {
+   position: absolute;
+   left: -1000em;
+}
+
+/* TODO: Get rid of these styles if I don't end up re-using them */
+#section-banner-bar {
+}
+
+#section-banner-bar .heading-background {
+}
+
+h1.section-banner 
+{
+}
+
+
+/* Debugging styles */
+
+#debug {
+    min-height: 500px;
+    min-width: 800px;
+}
+
+/* Menu bar */
+
+/* TODO: Fix the CSS so it doesn't look all wonky when theme developer is enabled */
+
+#menu-bar-container {
+    position: relative;
+    
+    width: 800px;
+    
+    margin: 0 auto;
+    
+    border-top: #FFF solid 1px;
+    border-bottom: #FFF solid 1px;
+
+    background-color: #6D6E70;    
+    background-image: url(images/menu_bar_background_tile.gif);
+    background-repeat: repeat-y;
+    
+    /* 
+     * Make sure drop-downs appear above any other content 
+     * It seems to make more sense to set this property for the
+     * drop-down uls, but I had to put it here so that the drop-
+     * down is displayed above other elements in IE7
+     */
+    z-index: 999; 
+}
+
+#menu-bar-container a {
+    color: white;
+}
+
+#menu-bar-container a:hover {
+    color: #990000;
+}
+
+/*
+ *Drop-down menu bar implemented using Suckerfish technique.
+ * See http://alistapart.com/articles/dropdowns for more info.
+ */
+
+#menu-bar-container ul {
+    padding: 0;
+    margin: 0;
+    
+    list-style: none !important;
+    
+    
+}
+
+#menu-bar-container li {
+    list-style-image: none !important;
+    list-style-type: none !important;
+    
+    position: relative;
+
+    background-color: #6D6E70;    
+}
+
+#menu-bar-container  .block-menu .content > ul {
+    margin-left: 200px;
+}
+
+/* Make the front page menu bar 300px from the left */
+
+.front-page  #menu-bar-container  .block-menu .content > ul {
+    margin-left: 300px;
+}
+
+/* Make the first level of menus horizontal */
+#menu-bar-container .block-menu .content > ul > li {
+    float: left;
+    
+    margin: 0;
+    
+    border-right: white solid 1px;
+    
+    padding: 0.2em 0.5em 0.2em 0.5em;
+		
+	font-weight: bold;
+	color: white;
+}
+
+
+
+#menu-bar-container .block-menu .content > ul > li.first {
+    border-left: white solid 1px;
+    
+    padding-left: 0.5em;
+}
+
+#menu-bar-container  ul > li > ul {
+    display: block;
+
+    /* display: none; */
+    /*
+     * Hide dropdown menus by default 
+     * I don't know why it's better to use this method instead of display: none,
+     * though I've heard display: none hides content from some screen readers
+     */
+    left: -999em;
+    /* DEBUG
+     * Comment above property and uncomment property below to always display dropdown
+     * menu.  This is useful for debugging.
+     */
+    /* left: 0; */
+    
+    /* DEBUG */
+}
+
+#menu-bar-container ul > li > ul {
+   width: 18em;
+}
+
+#menu-bar-container ul li ul li ul {
+    width: 24em;
+}
+
+#menu-bar-container  ul > li > ul a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#menu-bar-container .block-menu .content > ul > li > ul {
+    position: absolute;
+
+    top: 100%;
+}
+
+#menu-bar-container .block-menu .content > ul > li > ul > li {
+    margin-left: 0;
+    padding-left: 0.5em;
+  
+    font-size: 0.7em;
+}
+
+#menu-bar-container li:hover ul,
+#menu-bar-container li.sfhover ul {
+    display: block;
+    
+    /* left: auto miscalculates in IE7 (see http://www.gtalbot.org/BrowserBugsSection/MSIE7Bugs/CSSDropDownMenus.html)
+     * Use this style to bump the menu into the proper place in IE7
+     */
+    left: 0; 
+}
+
+/* 
+ * For some reason, this style seems to fix the disappearing menu 
+ * issue in IE7.  I have no idea why. 
+ * -Geoffrey Hing <ghing@indiana.edu> 2009-01-06
+ */
+#menu-bar-container li.sfhover ul {
+    background-color: #6D6E70;    
+}
+ 
+#menu-bar-container li.active-trail > ul > li > a {
+    font-size: 1.25em;
+}
+
+/* Research Centers block */
+
+.front-page #centers-container {
+    width: 300px;
+    height: 224px;
+    
+    float: left;
+    
+    /* This background shouldn't show through but will help debug weird gaps in IE */
+    background-color: black;
+}
+
+.front-page #centers-container .block-menu,
+.front-page #centers-container .block-menu .content {
+    height: 100%;
+}
+
+/* Hide the 'Research Centers' heading. */
+.front-page #centers-container h2 {
+    position: absolute;
+    left: -1000em;
+}
+
+.front-page #centers-container ul.menu {
+    height: 100%;
+    
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.front-page #centers-container ul.menu li {
+    /* 
+     * height = (height of containing block / # of list items) - padding to prevent margin collapse
+     * height = (224 / 4) - 1 = 55
+     */
+    width: 300px;
+    display: block;
+    margin: 0;
+    /* 
+     * Add 1px top padding to prevent margin collapse.
+     * See http://reference.sitepoint.com/css/collapsingmargins
+     */
+    padding: 1px 0 0 0 ;
+
+    /* 
+     * Get rid of gap between list items in IE.
+     */
+    vertical-align: bottom;
+
+    list-style-type: none !important;
+    list-style-image: none;
+    
+    background-color: #000;
+    background-image: url(images/research_centers_menu_list_background_tile.png);
+    background-repeat: repeat-y;
+    background-position: right;
+}
+
+/* Center Groups */
+.front-page #centers-container .content .menu > li {
+    height: 140px; 
+    border-bottom: white solid 1px;
+    background-color: #7d110c; /* IU Crimson.  See http://visualidentity.iu.edu/media/ */
+}
+.front-page #centers-container .content .menu > li + li {
+    height: 84px; 
+}
+
+.front-page #centers-container .menu li .menu li {
+    height: 27px;
+    padding-left: 5px;
+    width: 295px;
+}
+
+/* Center for Applied Cybersecurity Research; NCGAS */
+.front-page #centers-container .menu li .menu li {
+    border-bottom: white solid 1px;
+    background-color: #808a53; /* IU Olive.  See http://visualidentity.iu.edu/media/ */
+}
+
+/* CREST; RT */
+.front-page #centers-container .menu li .menu li + li {
+    border-bottom: white solid 1px;
+    background-color: #c78036; /* IU Leather.  See http://visualidentity.iu.edu/media/ */
+}
+
+/* Data to Insight Center */
+.front-page #centers-container .menu li .menu li + li + li {
+    border-bottom: white solid 1px;
+    background-color: #6f679d; /* IU Violet.  See http://visualidentity.iu.edu/media/ */
+}
+
+/* Digital Science Center */
+.front-page #centers-container .menu li .menu li + li + li + li {
+    border-bottom: white solid 1px;
+    background-color: #2d637f; /* IU Midnight.  See http://visualidentity.iu.edu/media/ */
+}
+
+.front-page #centers-container ul.menu li a {
+    display: block;
+    height: 21px;
+    margin-top: 6px;
+    margin-left: 10px;
+    color: white;
+    font-size: 0.7em;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.front-page #centers-container .content > .menu > li > a {
+    /* Disable menu "grouping" menu items http://stackoverflow.com/questions/2091168/disable-a-link-using-css */
+    pointer-events: none;
+    cursor: default;    
+}
+
+.front-page #centers-container .menu li .menu li a:hover {
+    /* TODO: Refactor this.  We can probably make a global a:hover style.*/
+    color: #990000; /* IU Hyperlinks.  See http://visualidentity.iu.edu/media/ */
+    /* text-decoration: underline; */
+}
+
+/*  Spotlight Container */
+#spotlight-container {
+    background-color: black;
+    position: relative;
+    float: left;
+    clear: right;
+    margin: 0;
+}
+
+#spotlight-container .node {
+    padding-top: 1px;
+
+    background-repeat: no-repeat;
+}
+
+#spotlight-container .front-spotlight {
+    width: 500px;
+    height: 224px;
+}
+
+#spotlight-container .center-spotlight {
+    width: 450px;
+    height: 300px;
+}
+
+#spotlight-container .lab-spotlight {
+    width: 600px;
+    height: 300px;
+}
+
+#spotlight-container h2 {
+    margin-top: 10px;
+    margin-left: 10px;
+
+    color: white;
+}
+
+#spotlight-container h2 span {
+    display: block;
+
+    font-size: 0.6em;
+}
+
+#spotlight-container .spotlight-text-bar {
+    position: absolute;
+
+    width: 100%;
+    
+    padding-top: 1px;
+    
+    background-image: url(images/spotlight_text_bar_background.png);
+    color: white;
+
+    text-align: right;
+}
+
+#spotlight-container .front-spotlight .spotlight-text-bar {
+    height: 101px;
+
+    /* 
+     * top = container height - height - padding-top
+     *            = 200px - 100px - 1 = 123px;
+     */
+    top: 123px;
+}
+
+#spotlight-container .center-spotlight .spotlight-text-bar {
+    height: 126px;
+
+    /* 
+     * top = container height - height - padding-top
+     *            = 300px - 126px - 1 = px;
+     */
+    top: 173px;
+}
+
+#spotlight-container .lab-spotlight .spotlight-text-bar {
+    height: 126px;
+
+    /* 
+     * top = container height - height - padding-top
+     *            = 300px - 126px - 1 = px;
+     */
+    top: 173px;
+}
+
+
+#spotlight-container .spotlight-text {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+
+    padding-left: 4px;
+    padding-bottom: 2px;
+
+    text-align: left;
+}
+
+#spotlight-container .spotlight-text h2 {
+   margin: 0px 0px 0px 0px;
+
+   font-size: 1em;
+}
+
+#spotlight-container .spotlight-text .content {
+   font-size: 0.6em;
+}
+
+#spotlight-container .spotlight-text .content p {
+   margin: 0 0 0 0;
+}
+
+#spotlight-container a {
+    color: white !important;
+    
+    font-weight: bold;
+}
+
+#spotlight-container a:hover {
+    color: #990000 !important;
+}
+
+#spotlight-container a.read-more {
+    text-transform: uppercase;
+    text-decoration: none;
+
+    margin-top: 0px;
+    margin-right: 20px;
+
+    font-size: 0.8em;
+}
+
+#spotlight-container a.read-more:after {
+    content: ' \00BB';
+}
+
+/* Center News region */
+
+#center-news-container {
+    float: left;
+
+    margin: 0;
+}
+
+#center-news-container .block-views {
+    width: 150px;
+    height: 299px;
+    
+    padding-top: 1px; 
+    
+    background-color: black;
+}
+
+#center-news-container .block-views h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    
+    color: white;
+    
+}
+
+#center-news-container .center-news {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    
+    border-top: 5px solid #212121;
+    
+    color: #c78036; /* IU Leather.  See http://visualidentity.iu.edu/media/ */
+    
+    font-size: 0.8em;
+}
+
+#center-news-container .center-news a {    
+    color: #c78036; /* IU Leather.  See http://visualidentity.iu.edu/media/ */
+}
+
+#center-news-container .center-news a:after {
+    content: ' \00BB';
+}
+
+#center-news-container .center-news a:hover {
+    /* TODO: Refactor this into a more general a:hover rule. */
+    color: #990000;
+}
+
+/* Left sidebar region */
+
+#left-sidebar-container {
+    height: 100%; 
+    width: 200px;
+	
+    float: left;
+
+    margin-left: 0;
+}
+
+/* If the left sidebar is empty, don't show it */
+#left-sidebar-container.empty {
+    display: none;
+}
+
+
+.inside-page #left-sidebar-container {
+	/*
+	 * Make sure that menu is long enough to force content to float
+	 * to the left on pages with short contextual menus and a spotlight.
+	 */
+	min-height: 302px; 
+	
+	background-color: #7D110C;
+}
+
+.iu-crimson #left-sidebar-container {
+    background-color: #7D110C;
+}
+
+.violet #left-sidebar-container {
+    background-color: #6f679d;
+}
+
+.olive #left-sidebar-container {
+    background-color: #808a53;
+}
+
+.leather #left-sidebar-container {
+    background-color: #c78036;
+}
+
+.midnight #left-sidebar-container {
+    background-color: #2d637f;
+}
+ 
+.dark-grey #left-sidebar-container {
+	background-color: #6D6E70;
+}
+
+.front-page #left-sidebar-container {
+    width: 300px;
+}
+
+.front-page #left-sidebar-container h2, 
+.front-page #left-sidebar-container p
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.front-page #left-sidebar-container h2,
+.front-page #left-sidebar-container .grey-bar {
+    margin-top: 0 !important;
+    margin-bottom: 0;
+
+    background-color: #6D6E70; /* IU Dark Grey */
+    color: white;
+}
+/*
+ * Highlights
+ */
+
+.inside-page #content-container #highlights-container h2 {
+    width: 589px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    border-bottom: 0px;
+    padding-left: 10px;
+
+    background-color: #7D110C; /* IU Dark Grey */
+    color: white;
+}
+
+.inside-page.leather #content-container #highlights-container h2 {
+    background-color: #c78036;
+}
+
+.inside-page.iu-crimson #content-container #highlights-container h2 {
+    background-color: #7D110C;
+}
+
+.inside-page.violet #content-container #highlights-container h2 {
+    background-color: #6f679d;
+}
+
+.inside-page.olive #content-container #highlights-container h2 {
+    background-color: #808a53;
+}
+
+.inside-page.midnight #content-container #highlights-container h2 {
+    background-color: #2d637f;
+}
+
+.field-field-highlight-extended-text .field-label {
+    display: none;
+}
+#block-views-highlights-block_1 .views-field-title {
+    font-size: 1.0em;
+    margin-top: 10px;
+}
+
+.view-highlights.view-display-id-block_3 .view-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #990000;
+}
+
+.view-highlights .item-list ol {
+   margin-top: 0;
+}
+
+.view-highlights .item-list .views-row {
+    border-bottom: none;
+}
+
+.view-highlights.view-display-id-block_4 .item-list li {
+    border-top: 1px solid black;
+}
+
+.view-highlights .views-field-view-node {
+    clear: left;
+    text-align: right;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+}
+
+.view-highlights a.read-more:after {
+    content: ' \00BB';
+}
+
+.view-highlights .views-row-odd {
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+}
+.view-highlights .views-row-even {
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+}
+.view-highlights .item-list {
+    padding-top: 10px;
+}
+#block-views-highlights-block_2 .view-footer {
+    font-size: 0.8em;
+    padding-top: 10px;
+}
+.view-highlights.view-display-id-page_3 .item-list li {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+.view-highlights.view-display-id-page_3 .view-footer {
+    font-size: 0.8em;
+    padding-top: 10px;
+}
+#pti-highlight-add-new  {
+    font-size: 0.8em;
+    text-align: right;
+}
+.front-page #pti-highlight-add-new  {
+    font-size: 0.8em;
+    float: right;
+}
+
+/*
+ * Publications
+ */
+a.view-header-link {
+    font-size: 0.8em;
+    margin-right: 10px;
+    float: right;
+}
+.view-biblio li.views-row {
+    list-style-image: none;
+    list-style-type: none;
+    margin: 0px 0px 10px 0px;
+}    
+.view-biblio .item-list h3 {
+    background-color: rgb(225, 225, 225);
+    border: 1px solid black;
+    margin: 1em 0px 1em 0px;
+    padding: 0.5em;
+}
+
+.pti-author-table, .pti-keyword-table {
+    width: 100%;
+}
+.pti-author-table.header, .pti-keyword-table.header {
+    font-weight: bold;
+    width: 50%;
+}
+.footnote {
+    font-size: 0.8em;
+    padding-top: 5px;
+}
+
+
+/*
+ * CI Newsletter
+ */
+.view-ci-news-nodequeue .item-list .views-row {
+    padding-top: 10px;
+    border-bottom: none;
+}
+.view-ci-news-nodequeue.view-display-id-block_1 li.views-row {
+    border-top: 1px solid black;
+}
+a.nodequeue-ajax-toggle {
+    font-size: 0.8em;
+}
+div.ci-newsletter-header {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+div.ci-newsletter-subhead {
+    text-align: right;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+}
+.view-ci-news-nodequeue .view-footer {
+    padding-top: 10px;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+
+/*
+ * For the upcoming events block, we want an appearance similar to the News blocks
+ */
+.inside-page #left-sidebar-container h2
+{
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+#block-views-pti_events-block_1 h2 {
+    border-top: 2px solid #CECECF;
+    height: 28px;
+    background: 5px 5px url('http://cgl.soic.indiana.edu/sites/default/files/images/accessories-date.png') no-repeat;
+    padding: 22px 55px 0;
+    margin: 0;
+    font-size: 16px;
+}
+.inside-page #block-views-pti_events-block_1 {
+    color: white;
+}
+#block-views-pti_events-block_1 .field-content {
+    display: block;
+    font-size: 0.8em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#block-views-pti_events-block_1 .views-row-odd {
+    padding-top: 10px;
+    border-bottom: 1px solid #cececf;
+}
+#block-views-pti_events-block_1 .views-row-even {
+    padding-top: 10px;
+    border-bottom: 1px solid #cececf;
+}
+#block-views-pti_events-block_1 .view-footer {
+    font-size: 0.8em;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+#block-views-pti_events-block_1 .views-field-title .field-content {
+    font-size: 1.0em;
+    margin-bottom: 5px;
+}
+#block-views-pti_events-block_1 .views-field-field-event-summary-value {
+    margin-top: 5px;
+    text-indent: 10px;
+    font-style: italic;
+}
+#block-views-pti_events-block_1 .views-field-view-node a {
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#block-views-pti_events-block_1 .views-field-view-node a:after {
+    content: ' \00BB';
+}
+.view-pti-events .view-header {
+    height: 0px;
+}
+#pti-event-add-new  {
+    font-size: 0.8em;
+    text-align: right;
+}
+.view-pti-events #pti-event-add-new  {
+    position: relative;
+    top: -30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/*
+ * Event nodes
+ */
+div.field-field-event-time {
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+div.field-field-event-location {
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+div.field-field-event-location p:first-child {
+    margin: 0px;
+}
+div.pti-event-vocabulary-terms {
+    margin-top: 10px;
+}
+
+#left-sidebar-container .date-display-single .date-display-start:before {
+    content: "\A  ";
+    white-space: pre;
+}
+
+/*
+ * Event calendar
+ */
+#left-sidebar-container div.view-pti-events-calendar {
+    margin: 10px;
+}
+
+/*
+ * When we took the mission off of the front page, 
+ * I replaced the h2 with a div.grey-bar.  Keep this commented 
+ * out but here for reference and in case text ever comes back
+ * to the bar at the top of the left sidebar on the front page.
+ */
+/*
+.front-page #left-sidebar-container h2:first-child {
+    border-top: solid 1px white;
+}
+*/
+
+.front-page #left-sidebar-container .grey-bar:first-child {
+    display: block;
+
+    height: 1.8em; /* This makes block the same height as a h2 */
+
+    border-top: solid 1px white;
+    border-bottom: none;
+
+    color: #6D6E70; /* IU Dark Grey */
+}
+
+/* 
+ * Left sidebar menu blocks 
+ *
+ * These will generally be for lab/center/RT unit contextual menus and partner menus.
+ */
+
+/* Force #main-container to have layout for IE7 so the margins of #left-sidebar-conainer don't disappear.  See http://www.satzansatz.de/cssd/onhavinglayout.html for more */
+#main-container
+{
+    min-width: 100px;
+    clear: left;
+}
+
+#left-sidebar-container .block-menu ul, 
+#left-sidebar-container .block-menu ul 
+{
+    margin-left: 0;
+
+    padding-left: 0 !important;
+
+}
+
+#left-sidebar-container .block-menu .content > ul {
+    border-bottom: 1px solid white;
+
+    padding-bottom: 0;
+}
+
+
+#left-sidebar-container .block-menu li.leaf
+{
+    margin-left: 0;
+    padding-left: 10px !important; 
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-right: 10px !important;
+    font-size: 0.8em;
+
+    list-style-type: none !important;
+    list-style-image: none !important;
+
+    border-bottom: 1px solid white;
+}
+
+#left-sidebar-container .block-menu li.last {
+    border: none !important;
+}
+
+#left-sidebar-container .block-menu li.active-trail {
+   background-color: #7D110C;
+}
+
+#left-sidebar-container .block-menu li a
+{
+   color: #B0B2B4;
+}
+
+#left-sidebar-container .block-menu li a:hover {
+    /* TODO: Refactor this.  We can probably make a global a:hover style.*/
+    color: white;
+}
+
+/* Media Contact block */
+#block-block-20 {
+    color: white;
+    padding: 10px;
+}
+#block-block-20 h2 {
+    font-size: 1.25em;
+    margin: 0px;
+    padding: 0px 0px 10px 0px !important;
+}
+
+#block-block-20 span {
+    display: block;
+    font-size: 10px;
+}
+#block-block-20 a {
+    font-size: 0.8em;
+    color: #B0B2B4;
+}
+#block-block-20 a:hover {
+    color: white;
+}
+
+/* Cyberinfrastructure Button */
+
+/* BOOKMARK */
+.cyberinfrastructure-block {
+	height: 150px;
+	width: 300px;
+	
+	display: block;
+	
+	position: relative;
+	
+	padding-top: 1px; /* Prevent margin collapse */
+	
+	color: white;
+	
+	font-size:0.8em;
+
+}
+
+.cyberinfrastructure-block a {
+	color: white;
+}
+
+.cyberinfrastructure-block a:hover {
+	color: #990000;
+}
+
+.cyberinfrastructure-block a.read-more {
+    text-transform: uppercase;
+    text-decoration: none;
+
+    margin-right: 10px;
+
+    font-size: 0.8em;
+}
+
+.cyberinfrastructure-block a.read-more:after {
+    content: ' \00BB';
+}
+
+.cyberinfrastructure-block .text-bar {
+/* Align the shaded bar to the bottom of the container */
+/*
+    position: absolute;
+	
+	bottom: 0;
+*/
+	
+	margin: 0px;
+	
+	padding-top:1px;
+	padding-bottom: 10px;
+	
+    text-align: right;
+	
+	background-image:url(images/spotlight_text_bar_background.png);
+	color:white;
+}
+
+.cyberinfrastructure-block .text-bar p {
+	text-align: left;
+}
+
+.cyberinfrastructure-block div {
+	margin: 10px;
+}
+
+/* Flavor of the Month Block */
+
+.front-page #left-sidebar-container .block-block {
+	background-color: black;
+	
+    color: #c78036; /* IU Leather */
+}
+
+.front-page #left-sidebar-container .block-block h3 {
+    padding-left: 10px;
+
+    font-size: 0.8em;
+}
+
+.front-page #left-sidebar-container .block-block p {
+	 font-size: 0.8em;
+}
+
+
+/* Content region */
+
+#content-container {
+    float: left;
+
+    /*
+     * Make this white to cover up the main-container background
+     * which is set to the same color as the sidebar.
+     */
+    background-color: white;
+    
+}
+
+.front-page #content-container {
+    width: 500px;
+
+    margin-left: 0;
+    
+    padding-left: 0;
+}
+
+.front-page #content-container #content {
+    float: left;
+    
+    border-left: black 1px solid;
+}
+
+.inside-page #content-container {
+    width: 600px;
+	min-height: 300px;
+        
+    /* padding-top: 1px; */
+    padding-bottom: 10px;
+}
+
+/* If the left sidebar is empty, make the content full-width */
+.inside-page #content-container.left-empty {
+    width: 800px;
+}    
+
+.inside-page #content-container h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+    padding-left: 10px;
+    
+    border-bottom: 1px black solid;
+    
+    color: #7D110C; /* IU Crimson */
+}
+
+/* Lab/center/RT unit branding bar */
+
+#entity-branding-bar {
+    margin-top: 0;
+    
+    padding-top: 1px;
+    
+    background-image: url(images/entity_branding_bar_background_tile.png);
+    background-repeat: repeat-y;
+    background-color: #6D6E70;
+}
+
+.iu-crimson #entity-branding-bar {
+    background-color: #7D110C;
+}
+
+.violet #entity-branding-bar {
+    background-color: #6f679d;
+}
+
+.olive #entity-branding-bar {
+    background-color: #808a53;
+}
+
+.leather #entity-branding-bar {
+    background-color: #c78036;
+}
+
+.midnight #entity-branding-bar {
+    background-color: #2d637f;
+}
+
+.dark-grey #entity-branding-bar {
+	background-color: #6D6E70;
+}
+
+#entity-branding-bar h2 {    
+    color: white !important;
+    
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    
+    border-bottom: none !important;
+}
+
+#entity-branding-bar h2 span {
+    display: block;
+
+    font-size: 0.6em;
+}
+
+.inside-page #content-container #content {
+    margin: 10px 10px 10px 10px;
+}
+
+.front-page #content-container > h2 {
+    border-top: solid 1px white;
+    border-left: solid 1px white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #7D110C;
+    color: white;
+    font-size: 16px;
+}
+
+.breadcrumb {
+    padding: 0.25em 0 !important;
+
+    font-size: 0.8em;
+}
+
+
+/* Primary tabs for nodes: Edit, Worfklow, etc. */
+
+a.tab-control {
+    display: block;
+    font-size: 0.5em;
+}
+
+ul.tabs.primary {
+    display: block;
+    
+    margin: 0;
+    border: 0;
+    padding: 0 1em 0.5em 0;
+    
+    white-space: normal; /* Make the tabs wrap around so they don't overflow their container */
+}
+
+/* People page related styles */
+
+/* Categories of People */
+.people-page #content-container h3 {
+    color: #7D110C; /* IU Crimson */
+}
+
+/* Person's name */
+.people-page #content-container h4 {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.people-page #content-container h4 + p {
+    margin-top: 0em;
+}
+
+.people-page #content-container tbody {
+    border-top: none !important;
+}
+
+.people-page #content-container tr td:first-child {
+    vertical-align: top;
+}
+
+.people-page #content-container tr td:first-child p {
+    margin: 0;
+}
+
+.people-page #content-container tr td + td {
+    padding-left: 1em;    
+}
+
+.people-page #content-container tr td h4 {
+    margin-top: 0;
+}
+
+/* Highlights Block */
+
+.front-page #block-views-highlights-block_1 > .content {
+    /* border-top: 1px solid white; */
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background-color: black;
+    color: #c78036; /* IU Leather */
+
+}    
+
+.front-page #block-views-highlights-block_1 .view-header h2 {
+    margin-top: 10px;
+    border: none;
+    padding-left: 0 !important;
+
+    background-color: black;
+    color: white;
+
+    font-size: 1em;
+}    
+
+.front-page #block-views-highlights-block_1 .content h3 {
+    color: white;
+
+    font-size: 0.8em;
+
+    font-weight: bold;
+}   
+
+.front-page #block-views-highlights-block_1 .content h3 a {
+    color: white; 
+}    
+
+.front-page #block-views-highlights-block_1 .content h3 a:hover {
+    color: #990000;
+}
+
+.front-page #block-views-highlights-block_1 .content p {
+    font-size: 0.8em;
+}
+
+
+/* News blocks */
+
+#block-views-news_view-block_2 > .content,
+#block-views-news_view-block_3 > .content,
+.view-id-news_view.view-display-id-block_3
+{
+    padding-top: 1px;
+
+    background-color: white;
+}
+
+#block-views-news_view-block_2 > .content h3,
+#block-views-news_view-block_3 > .content h3,
+.view-id-news_view.view-display-id-block_3 h3 {
+    font-size: 1em;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#block-views-news_view-block_2 > .content h3 a,
+#block-views-news_view-block_3 > .content h3 a,
+.view-id-news_view.view-display-id-block_3 h3 a
+{
+    color: black;
+}
+
+#block-views-news_view-block_2 > .content h3 a:hover,
+#block-views-news_view-block_3 > .content h3 a:hover,
+.view-id-news_view.view-display-id-block_3 h3 a:hover
+{
+    /* TODO: Refactor this.  We can probably make a global a:hover style.*/
+    color: #990000; /* IU Hyperlinks.  See http://visualidentity.iu.edu/media/ */
+}
+
+#block-views-news_view-block_2 .views-row-odd,
+#block-views-news_view-block_2 .views-row-even,
+#block-views-news_view-block_3 .views-row-odd,
+#block-views-news_view-block_3 .views-row-even,
+.view-id-news_view.view-display-id-block_3 .views-row-odd,
+.view-id-news_view.view-display-id-block_3 .views-row-even
+{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #cececf;
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+#block-views-news_view-block_2 .views-row-odd,
+#block-views-news_view-block_2 .views-row-even
+{
+    width: 479px;
+}
+
+#block-views-news_view-block_3 .views-row-odd,
+#block-views-news_view-block_3 .views-row-even
+{
+	margin-left: -10px;
+    width: 579px;
+}
+
+.view-id-news_view.view-display-id-block_3 .views-row-odd,
+.view-id-news_view.view-display-id-block_3 .views-row-even
+{
+	margin-left: -10px;
+    width: 569px;
+}
+
+#block-views-news_view-block_2 .node img,
+#block-views-news_view-block_3 .node img,
+.view-id-news_view.view-display-id-block_3 .node img
+{
+   width: 100px;
+   height: 100px;
+
+   float: left;
+
+   margin-right: 5px;
+
+   border: 1px solid black; 
+
+   padding: 1px;
+}
+
+#block-views-news_view-block_2 .node .content,
+#block-views-news_view-block_3 .node .content,
+.view-id-news_view.view-display-id-block_3 .node .content
+{
+   margin-bottom: 0;
+
+   padding-top: 1px;
+   
+   font-size: 0.8em;
+}
+
+#block-views-news_view-block_2 a.read-more,
+#block-views-news_view-block_3 a.read-more,
+.view-id-news_view.view-display-id-block_3 a.read-more
+{
+    display: block;
+    
+    text-align: right;
+    
+    text-transform: uppercase;
+}
+
+#block-views-news_view-block_2 a.feed-link {
+	text-transform: uppercase;
+}
+
+#block-views-news_view-block_2 a.read-more:after,
+#block-views-news_view-block_2 a.feed-link:after,
+#block-views-news_view-block_3 a.read-more:after,
+.view-id-news_view.view-display-id-block_3 a.read-more:after
+{
+    content: ' \00BB';
+}
+
+#block-views-news_view-block_2 .view-footer,
+#block-views-news_view-block_2 .feed-icon,
+#block-views-news_view-block_3 .view-footer,
+.view-id-news_view.view-display-id-block_3 .view-footer
+{	
+	padding: 10px;
+}
+
+#block-views-news_view-block_3 .view-footer,
+.view-id-news_view.view-display-id-block_3 .view-footer {
+	clear: both;
+}
+
+#block-views-news_view-block_2 div.feed-icon {	
+	float: left;
+}
+
+#block-views-news_view-block_2 div.feed-icon {
+	text-align: right;
+}
+
+#block-views-news_view-block_2 #feature-links,
+#block-views-news_view-block_3 #feature-links,
+.view-id-news_view.view-display-id-block_3 #feature-links
+{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+    text-align: right;
+}
+
+/* Partners logos on the bottom of the front page */
+
+.front-page #partners-container {
+    display: block; 
+    
+    clear: both;
+	
+    border-top: 1px black solid;
+	
+	margin: 0;
+	
+	padding: 10px 0;
+	
+	background-color: white;
+	
+	text-align: center;
+}
+
+.front-page #partners-container ul {
+    display: block;
+	
+	/* width = sum of logo width (see below) + margins */
+	/*       = 649px + 20px + 20px = 669px */
+	width: 739px; 
+	
+    padding: 0 0 0 0;
+    margin: 0px auto 0px auto;
+    
+    list-style: none !important;
+}
+
+.front-page #partners-container li {
+    float: left;
+    
+    list-style-image: none !important;
+    list-style-type: none !important;
+}
+
+.front-page #partners-container li a {
+    display: block;
+}
+
+.front-page #partners-container li#partner-informatics a {
+    height: 33px;
+	width: 242px; /* From width of background image file */
+	
+    margin-top: 7px; /* Compensate for OVPIT "wordmark being taller */
+	
+    background: url(images/OSI_IU.H.BLACK.png) no-repeat;
+}
+
+.front-page #partners-container li#partner-law a {
+    height: 33px;
+	width: 207px; /* From width of background image file */
+	
+    margin-top: 7px; /* Compensate for OVPIT "wordmark being taller */
+	margin-left: 45px;
+	margin-right: 45px;
+	
+    background: url(images/IUMSOLBH.BLACK.png) no-repeat;
+}
+
+.front-page #partners-container li#partner-ovpit a {
+    height: 48px;
+	width: 200px; /* From width of background image file */
+
+    background: url(images/IU_VPITCIO.V2.CMYK.png) no-repeat;
+}
+.front-page #grantmaking-logos {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+}
+.front-page #nsf-logo-link {
+    margin-left: 10px;
+    height: 55px;
+    width: 55px;
+}
+.front-page #nih-logo-link {
+    margin-left: 10px;
+    height: 55px;
+    width: 55px;
+}
+.front-page #teragrid-logo-link {
+    margin-left: 10px;
+    height: 55px;
+    width: 128px;
+}
+    
+/* Hide the link text */
+.front-page #partners-container li a span {
+   position: absolute;
+   left: -1000em;
+}
+
+/* Footer */
+
+#footer {
+    clear: both;
+
+    margin-top: 0;
+
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+
+    overflow: hidden;
+
+    background-color: black;
+    color: #FFFFFF;
+
+    text-align: left;
+
+}
+
+#footer hr {
+    display: none;
+}
+
+#footer > p {
+    font-size: 0.688em; /* 11px */
+    margin-top: 1em;
+}
+
+#footer #block-iu {
+    float: left;
+
+    margin-right: 0.5em;
+}
+
+#footer #block-iu a {
+   float: left;
+}
+
+#footer #block-iu img {
+   border: 0;
+
+   float: left;
+}
+
+#footer #copyright {
+    font-size: 0.688em; /* 11px */
+    line-height: 1.364em; /* 15px */
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    /* width: 760px; */
+}
+
+#footer #copyright p {
+    margin: 0;
+    padding: 7px 0 0 8px;
+}
+
+#footer #copyright a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* "Secret" edit links for spotlight, center news block, and news block items */
+
+.news-edit-links {	
+	font-size: xx-small;
+}
+
+.news-edit-links a:after {
+	content: none !important;
+}
+
+.news-hide {
+	display: none;
+}
+
+.view-section-overviews:hover .news-hide,
+.center-news:hover .news-hide,
+.node:hover .news-hide {
+	display: block;
+}
+
+.spotlight-text-bar .news-hide {
+	margin-right: 20px;
+}
+	
+/* Start styling for the KB XSL translation */
+
+/* This helps render <example> tags. */
+
+span.example {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em;
+}
+
+table span.example {
+    margin: 0;
+}
+
+/* .noborder is used by both images and tables. */
+
+.noborder {
+    border: none;
+}
+
+/* This helps render <image> tags. */
+
+img.kbimage {
+    padding-bottom: 1em;
+    border-bottom: solid 1px;
+}
+
+ul img.noborder { 
+   padding: 0em;
+   margin: 0em;
+   vertical-align: middle;
+}
+
+/* This helps render <kbtable> and related tags. */
+
+.kbtable {
+    border: solid 1px black;
+}
+
+.kbtd, .kbth {
+    border: solid 1px black;
+    padding: 8px;
+}
+
+/* This gets the information about document ID, last approved date, etc. 
+in the footer to look the way people expect, while marking it up in a 
+way that looks good in, say, Lynx. */
+
+div.documentInfo {
+    font-style: italic;
+}
+
+div.documentInfo em {
+    font-style: normal;
+}
+
+div.field-field-kb-doc-content .hidden{
+ display: none;
+ }
+
+div.field-field-kb-doc-content a[name]{
+ color: #000;
+ font-weight: normal;
+ }
+ 
+span.example {
+    font-size: 0.90em;
+    margin-left: 0;
+    margin-right: 0;
+    width: 580px;
+    overflow-x: auto;
+}
+
+#panel-pti-main ul {
+    width: 540px;
+}
+
+/* End of KB XSL styling */
+
+div.view-d2i-projects div.view-content table.views-view-grid tbody tr td {
+	padding: 20px 50px;
+	text-align: center;
+}
+
+
+.ddblock-container {
+    clear: left;
+}
+
+.ddblock-number-pager {
+    position: absolute;
+    top: 0px;
+    left: 575px;
+    z-index: 99;
+}

@@ -1,0 +1,43 @@
+div.view-view-sysoutage {
+	font-family: helvetica;
+}
+
+div.sysoutage-teaser {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+div.sysoutage-changed {
+	text-align: right;
+	margin-right: 1em;
+}
+
+hr.sysoutage-separator {
+	width: 95%;
+}
+
+div.sysoutage-header {
+	padding: .2em;
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+div.sysoutage-list {
+	border: 2px solid black;
+}
+
+div.sysoutage-list div.views-row {
+	padding: .3em;
+}
+
+div.sysoutage-list a {
+	text-decoration: underline;
+}
+
+div.sysoutage-title {
+	padding-bottom: .2em;
+}
+

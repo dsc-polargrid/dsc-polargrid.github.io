@@ -1,0 +1,39 @@
+#panel-pti-title-bar { 
+    width: 800px; 
+}
+#panel-pti-nav-bar { 
+    width: 800px; 
+}
+#panel-pti-left-col {
+    clear: left;
+    float: left; 
+    width: 200px; 
+}
+#panel-pti-subtitle-bar { 
+    float: left; 
+    clear: right;
+    width: 600px; 
+}
+#panel-pti-spotlight {
+    float: left; 
+    width: 600px;
+}
+#panel-pti-main {
+    clear: left;
+    width: 800px;
+}
+#panel-pti-main-left {
+    float: left;
+    width: 247px;
+    margin: 10px;
+}
+#panel-pti-main-center {
+    float: left;
+    width: 246px;
+    margin: 10px;
+}
+#panel-pti-main-right {
+    float: left;
+    width: 247px;
+    margin: 10px;
+}

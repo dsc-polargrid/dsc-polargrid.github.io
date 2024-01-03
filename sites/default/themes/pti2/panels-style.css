@@ -1,0 +1,949 @@
+.new-banner.panel-display {
+    width: 800px;
+    position: relative;
+    left: 16px;
+}
+.new-banner .pane-content {
+    padding: 0px;
+    text-align: left;
+}
+
+new-banner .pane-content a {
+}
+
+.iu-dark-gray.panel-display {
+    background-color: #6D6E70;
+}
+.iu-light-gray.panel-display {
+    background-color: #B0B2B4;
+}
+.iu-midnight.panel-display {
+    background-color: #2D637F;
+}
+.iu-violet.panel-display {
+    background-color: #6F679D;
+}
+.iu-olive.panel-display {
+    background-color: #808A53;
+}
+.iu-leather.panel-display {
+    background-color: #C78036;
+}
+.iu-crimson.panel-display {
+    background-color: #7D110C;
+}
+
+#content {
+    background-color: white;
+}
+
+#panel-pti-main {
+	min-height: 300px; 
+    background-color: white;
+}
+
+a.read-more {
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 0px;
+    margin-right: 20px;
+    font-size: 0.8em !important;
+}
+a.read-more:after {
+    content: ' \00BB';
+}
+
+.title .pane-title {
+    margin-top: 0px;
+    padding-left: 10px;
+}
+
+.panel-pti-section .pane-content {
+    padding: 10px;
+}
+
+#panel-pti-title-bar {
+  background-color: black;
+}
+
+#panel-pti-title-bar .pane-content {
+  padding-bottom: 5px;
+}
+
+#panel-pti-title-bar a {
+    color: white;
+    font-size: 2em;
+}
+
+#panel-pti-title-bar a:hover {
+   color: #990000;
+}
+
+#panel-pti-subtitle-bar .pane-content {
+    background-image: url(images/entity_branding_bar_background_tile.png);
+    background-repeat: repeat-y;
+    padding: 5px 0px 5px 15px;
+}
+.iu-dark-gray #panel-pti-subtitle-bar .pane-content {
+    background-color: #6D6E70;
+}
+.iu-light-gray #panel-pti-subtitle-bar .pane-content {
+    background-color: #B0B2B4;
+}
+.iu-midnight #panel-pti-subtitle-bar .pane-content {
+    background-color: #2D637F;
+}
+.iu-violet #panel-pti-subtitle-bar .pane-content {
+    background-color: #6F679D;
+}
+.iu-olive #panel-pti-subtitle-bar .pane-content {
+    background-color: #808A53;
+}
+.iu-leather #panel-pti-subtitle-bar .pane-content {
+    background-color: #C78036;
+}
+.iu-crimson #panel-pti-subtitle-bar .pane-content {
+    background-color: #7D110C;
+}
+
+#panel-pti-subtitle-bar h3 {
+    color: white;
+    font-size: 1.25em;
+    margin: 0px;
+}
+
+#panel-pti-subtitle-bar h3 span {
+    display: block;
+    font-size: 0.8em;
+}
+
+#panel-pti-subtitle-bar a {
+    color: white;
+}
+#panel-pti-subtitle-bar a:hover {
+   color: #990000;
+}
+
+#panel-pti-main .pane-title {
+    margin-bottom: 0px;
+}
+
+#panel-pti-main .pane-content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#panel-pti-main .view-insider .views-row {
+    /* Expand to contain floated content */
+    overflow: hidden;
+}
+
+#panel-pti-main .view-insider.view-display-id-block_4 .views-row {
+    padding: 5px 5px 5px 10px;
+    border-bottom: 5px solid #212121;
+    font-size: 0.8em;
+}
+
+#panel-pti-main .view-insider.view-display-id-block_4 .views-row.views-row-last {
+    border-bottom: 0px;
+}
+
+#panel-pti-main .view-insider.view-display-id-block_4 .views-field-view-node {
+    text-align: right;
+}
+
+#panel-pti-main .view-insider.view-display-id-block_4 .views-field-view-node a:after {
+    content: ' \00BB';
+}
+
+#panel-pti-main tbody {
+    border: inherit;
+}
+
+#d2i-section-page {
+    background-color: white;
+}
+
+#panel-pti-main .pti-d2i-section-pane h2.pane-title {
+    background-color: #4E0A07;
+    color: white;
+    font-size: 1.0em;
+    text-align: center;
+    margin: 0;
+    padding: 10px 50px 10px 50px;
+}
+
+#panel-pti-main .pti-d2i-section-pane .views-row {
+    font-size: 0.8em;
+}
+
+#panel-pti-main .pti-d2i-section-pane.pane-news-view {
+    float: left;
+    width: 350px;
+}
+
+#panel-pti-main .pti-d2i-section-pane.pane-news-view .view-content .views-row {
+    width: 100%;
+}
+
+/* #panel-pti-main .pti-d2i-section-pane.pane-news-view .view-content .views-row .content { */
+/*     display: none; */
+/* } */
+
+#panel-pti-main .pti-d2i-section-pane.pane-pti-events {
+    float: left;
+    width: 250px;
+}
+
+#panel-pti-main .pti-d2i-section-pane.pane-pti-events .view-footer {
+    margin-top: 10px;
+}
+#panel-pti-main .pti-d2i-section-pane.pane-pti-events .view-footer a {
+    float: right;
+}
+
+#panel-pti-main .pti-d2i-section-pane.pane-pti-events .views-row {
+    padding: 10px;
+    border-bottom: 1px solid #CECECF;
+}
+#panel-pti-main .pti-d2i-section-pane.pane-pti-events .views-field-field-event-summary-value {
+    text-indent: 10px;
+    font-style: italic;
+}
+
+#section-pti-link .pane-content {
+    padding-top: 0px;
+    margin-left: 20px;
+}
+
+#section-pti-link a {
+    font-size: 1em;
+}
+
+#panel-pti-left-col h2 {
+    font-size: 1.25em;
+    margin: 0px;
+    padding: 10px 0px 0px 10px;
+}
+#panel-pti-left-col .inside h2 {
+    color: white !important;
+}
+
+#panel-pti-left-col .inside h3 {
+    margin: 0px;
+}
+
+.iu-crimson #panel-pti-left-col .inside a {
+    color: #B0B2B4;
+}
+
+.iu-crimson #panel-pti-left-col .inside a:hover {
+    color: white;
+}
+
+.panel-pane.headlines {
+    border-bottom: 1px solid white;
+}
+
+#panel-pti-left-col .inside .views-row {
+    margin-bottom: 5px;
+}
+
+#panel-pti-left-col .inside .block-menu h2 {
+    color: black;
+}
+
+#panel-pti-left-col .rounded-corner {
+    margin: 5px;
+}
+#panel-pti-left-col .rounded-corner .wrap-corner .r-edge {
+    padding: 5px;
+}
+
+#panel-pti-left-col .pane-content {
+    font-size: 0.8em;
+}
+
+/* Force height to allow 4 news items in main area */
+#panel-pti-left-col .pane-block-22 .pane-content {
+    min-height: 620px;
+}
+
+
+#panel-pti-spotlight .pane-content {
+    padding: 0px;
+}
+
+#panel-pti-spotlight a {
+    color: white;
+    font-size: 1em;
+}
+#panel-pti-spotlight a:hover {
+   color: #990000;
+}
+#panel-pti-spotlight .center-spotlight,
+#panel-pti-spotlight .lab-spotlight {
+    height: 300px;
+}
+#panel-pti-spotlight .spotlight-text-bar {
+    width: 100%;
+    height: 110px;
+    position: relative; top: 170px;
+    background-image: url(images/spotlight_text_bar_background.png);
+    padding: 20px 0px 0px; 0px;
+    text-align: right;
+}
+#panel-pti-spotlight h2 {
+    display: none;
+}
+#panel-pti-spotlight .spotlight-text h2 {
+    margin: 0px;
+    padding: 0px 10px 0px 10px;
+    display: block;
+    font-size: 1em;
+    text-align: left;
+}
+#panel-pti-spotlight .spotlight-text p {
+    margin: 0px;
+    padding: 0px 10px 0px 10px;
+    font-size: 0.6em;
+    color: white;
+    text-align: left;
+}
+
+#panel-pti-spotlight .rotator {
+    background-color: white;
+}
+
+#panel-pti-news .pane-content {
+    padding: 0px;
+}
+
+#panel-pti-news .panel-pane {
+    height: 300px;
+    background-color: black;
+}
+
+#panel-pti-news h2 {
+    margin: 0px;
+    padding: 10px 0px 0px 5px;
+    color: white;
+}
+
+#panel-pti-news .center-news {
+    padding: 5px 5px 5px 10px;
+    border-top: 5px solid #212121;
+    font-size: 0.8em;
+}
+#panel-pti-news .center-news a {
+    color: #c78036; /* IU Leather */
+}
+#panel-pti-news .center-news a:hover {
+   color: #990000;
+}
+#panel-pti-news .center-news a:after {
+    content: ' \00BB';
+}
+
+.view-insider.view-display-id-block_1 .views-field-view-node {
+    text-align: right;
+}
+
+.view-insider.view-display-id-block_1 .views-field-title .field-content {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.view-insider.view-display-id-block_1 .view-content h3 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.view-insider.view-display-id-block_1 .views-row  {
+    margin-top: 10px;
+}
+/*
+ *Drop-down menu bar implemented using Suckerfish technique.
+ * See http://alistapart.com/articles/dropdowns for more info.
+ */
+#panel-pti-nav-bar .pane-content {
+    padding: 0px;
+}
+
+#panel-pti-nav-bar .pane-content > ul {
+    margin-left: 200px;
+}
+
+
+/* Make the first level of menus horizontal */
+#panel-pti-nav-bar .pane-content {
+    height: 23px;
+    border-top: #FFF solid 1px;
+    border-bottom: #FFF solid 1px;
+    
+    /* 
+     * Make sure drop-downs appear above any other content 
+     * It seems to make more sense to set this property for the
+     * drop-down uls, but I had to put it here so that the drop-
+     * down is displayed above other elements in IE7
+     */
+    z-index: 999; 
+}
+
+.iu-dark-gray #panel-pti-nav-bar .pane-content {
+    background-color: #6D6E70;
+}
+.iu-light-gray #panel-pti-nav-bar .pane-content {
+    background-color: #6D6E70;
+    /* background-color: #B0B2B4; */
+}
+.iu-midnight #panel-pti-nav-bar .pane-content {
+    background-color: #6D6E70;
+    /* background-color: #2D637F; */
+}
+.iu-violet #panel-pti-nav-bar .pane-content {
+    background-color: #6D6E70;
+    /* background-color: #6F679D; */
+}
+.iu-olive #panel-pti-nav-bar .pane-content {
+    background-color: #6D6E70;
+    /* background-color: #808A53; */
+}
+.iu-leather #panel-pti-nav-bar .pane-content {
+    background-color: #6D6E70;
+    /* background-color: #C78036; */
+}
+.iu-crimson #panel-pti-nav-bar .pane-content {
+    background-color: #6D6E70;
+}
+
+#panel-pti-nav-bar a {
+    color: white;
+}
+
+#panel-pti-nav-bar a:hover {
+    color: #990000;
+}
+
+#panel-pti-nav-bar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none !important;
+    z-index: 999; 
+}
+
+#panel-pti-nav-bar li {
+    list-style-image: none !important;
+    list-style-type: none !important;
+    position: relative;
+}
+.iu-dark-gray #panel-pti-nav-bar li {
+    background-color: #6D6E70;
+}
+.iu-light-gray #panel-pti-nav-bar li {
+    background-color: #6D6E70;
+    /* background-color: #B0B2B4; */
+}
+.iu-midnight #panel-pti-nav-bar li {
+    background-color: #6D6E70;
+    /* background-color: #2D637F; */
+}
+.iu-violet #panel-pti-nav-bar li {
+    background-color: #6D6E70;
+    /* background-color: #6F679D; */
+}
+.iu-olive #panel-pti-nav-bar li {
+    background-color: #6D6E70;
+    /* background-color: #808A53; */
+}
+.iu-leather #panel-pti-nav-bar li {
+    background-color: #6D6E70;
+    /* background-color: #C78036; */
+}
+.iu-crimson #panel-pti-nav-bar li {
+    background-color: #6D6E70;
+}
+
+#panel-pti-nav-bar .pane-content > ul > li {
+    float: left;
+    margin: 0;
+    height: 19px;
+    border-right: white solid 1px;
+    padding: 2px 8px 2px 8px;
+	font-weight: bold;
+	color: white;
+}
+
+#panel-pti-nav-bar .pane-content > ul > li.first {
+    padding-left: 0.5em;
+}
+
+#panel-pti-nav-bar ul > li {
+    margin-left: 1em;
+}
+
+#panel-pti-nav-bar  ul > li > ul {
+    display: none;
+}
+
+#panel-pti-nav-bar .pane-content > ul > li > ul {
+    position: absolute;
+    top: 100%;
+}
+#panel-pti-nav-bar .pane-content > ul > li > ul > li {
+    margin-left: 0;
+    padding-left: 0.5em;
+    font-size: 0.7em;
+}
+
+#panel-pti-nav-bar ul > li > ul {
+   width: 18em;
+}
+
+#panel-pti-nav-bar ul li ul li ul {
+    width: 24em;
+}
+
+#panel-pti-nav-bar  ul > li > ul a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+#panel-pti-nav-bar li:hover ul,
+#panel-pti-nav-bar li.sfhover ul {
+    display: block;
+    
+    /* left: auto miscalculates in IE7 (see http://www.gtalbot.org/BrowserBugsSection/MSIE7Bugs/CSSDropDownMenus.html)
+     * Use this style to bump the menu into the proper place in IE7
+     */
+    left: 0; 
+}
+
+/* 
+ * For some reason, this style seems to fix the disappearing menu 
+ * issue in IE7.  I have no idea why. 
+ * -Geoffrey Hing <ghing@indiana.edu> 2009-01-06
+ */
+#panel-pti-nav-bar li.sfhover ul {
+    background-color: #6D6E70;    
+}
+
+
+
+#panel-pti-left-col {
+	/*
+	 * Make sure that menu is long enough to force content to float
+	 * to the left on pages with short contextual menus and a spotlight.
+	 */
+	min-height: 302px; 
+	background-color: #6D6E70;
+}
+
+.iu-violet #panel-pti-left-col {
+    background-color: #6f679d;
+}
+
+.iu-olive #panel-pti-left-col {
+    background-color: #808a53;
+}
+
+.iu-leather #panel-pti-left-col {
+    background-color: #c78036;
+}
+
+.iu-midnight #panel-pti-left-col {
+    background-color: #2d637f;
+}
+ 
+.iu-dark-grey #panel-pti-left-col {
+	background-color: #6D6E70;
+}
+
+.iu-crimson #panel-pti-left-col {
+	background-color: #7D110C;
+}
+
+#panel-pti-left-col .block-menu .admin-links {
+    display: none;
+}
+
+#panel-pti-left-col .block-menu .pane-content {
+    font-size: 1em;
+    padding: 0px;
+}
+
+#panel-pti-left-col .block-menu ul.menu {
+    margin: 0px;
+}
+
+#panel-pti-left-col li {
+    list-style-type: none !important;
+    list-style-image: none !important;
+}
+
+#panel-pti-left-col li.views-row {
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+#panel-pti-left-col li.views-row a {
+    color: #D4D3CF;
+}
+#panel-pti-left-col li.views-row a:hover {
+    color: #B0B2B4;
+}
+
+#panel-pti-left-col .block-menu ul, 
+#panel-pti-left-col .block-menu ul 
+{
+    margin-left: 0;
+
+    padding-left: 0 !important;
+
+}
+
+#panel-pti-left-col .block-menu .content > ul {
+    border-bottom: 1px solid white;
+
+    padding-bottom: 0;
+}
+
+
+#panel-pti-left-col .block-menu li.leaf,
+#panel-pti-left-col .block-menu li.expanded,
+#panel-pti-left-col .block-menu li.collapsed
+{
+    margin-left: 0;
+    padding-left: 10px !important; 
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-right: 10px !important;
+    font-size: 13px;
+
+    list-style-type: none !important;
+    list-style-image: none !important;
+
+    border-bottom: 1px solid white;
+}
+
+#panel-pti-left-col .block-menu .menu .menu li
+{
+    border-bottom: 0;
+}
+
+#panel-pti-left-col .block-menu li.active-trail {
+   background-color: #B0B2B4;
+}
+
+.iu-violet #panel-pti-left-col .block-menu li.active-trail {
+   background-color: #9188c7;
+}
+
+.iu-olive #panel-pti-left-col  .block-menu li.active-trail {
+   background-color: #acb779;
+}
+
+.iu-leather #panel-pti-left-col .block-menu li.active-trail {
+   background-color: #db954c;
+}
+
+.iu-midnight #panel-pti-left-col .block-menu li.active-trail {
+   background-color: #538aa7;
+}
+
+.iu-dark-grey #panel-pti-left-col .block-menu li.active-trail {
+	background-color: #B0B2B4;
+}
+
+.iu-crimson #panel-pti-left-col .block-menu li.active-trail {
+	background-color: #7D110C;
+}
+
+#panel-pti-left-col .block-menu li a
+{
+   color: white;
+}
+
+#panel-pti-left-col .block-menu li a:hover {
+    /* TODO: Refactor this.  We can probably make a global a:hover style.*/
+    color: #990000; /* IU Hyperlinks.  See http://visualidentity.iu.edu/media/ */
+}
+
+#panel-pti-left-col .pti-feature-menu h2.pane-title {
+    background-color: #4E0A07;
+    font-size: 1.0em;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+}
+
+#panel-pti-left-col .pti-feature-menu .pane-content {
+    background-color: #F6ADAA;
+    padding: 10px 5px 10px 5px;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    height: 680px;
+}
+
+#panel-pti-left-col .pti-feature-menu ul.menu {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#panel-pti-left-col .pti-feature-menu ul.menu li.leaf {
+    width: 90px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+/* Force floated items into parent container (clearfix technique) */
+#panel-pti-left-col .pti-feature-menu .pane-content:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;    
+}
+
+#panel-pti-left-col .pti-feature-menu a {
+    font-size: 11px;
+    color: #4E0A07 !important;
+}
+#panel-pti-left-col .pti-feature-menu li.leaf a:hover,
+#panel-pti-left-col .pti-feature-menu td a:hover {
+    color: #AB1710 !important;
+}
+
+#panel-pti-left-col .pti-feature-menu tbody {
+    border: 0;
+}
+
+#panel-pti-left-col .pti-feature-menu td {
+    padding-bottom: 10px;
+}
+
+#panel-pti-left-col .pti-feature-menu td img {
+    padding-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+img.cert-seal {
+    position: relative;
+    left: -10px;
+    top: -10px;
+}
+
+#pane-pti-events h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #212121;
+}
+
+#pane-pti-events {
+    color: white;
+}
+
+#pane-pti-events .pane-content{
+    padding: 10px 0px 10px 0px;
+}
+#pane-pti-events .field-content {
+    display: block;
+    font-size: 0.8em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#pane-pti-events .views-row-odd {
+    padding-top: 10px;
+    border-bottom: 5px solid #212121;
+}
+#pane-pti-events .views-row-even {
+    padding-top: 10px;
+    border-bottom: 5px solid #212121;
+}
+#pane-pti-events .view-footer {
+    font-size: 0.8em;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+#pane-pti-events .views-field-title .field-content {
+    font-size: 1.0em;
+    margin-bottom: 5px;
+}
+#pane-pti-events .views-field-field-event-summary-value {
+    margin-top: 5px;
+    text-indent: 10px;
+    font-style: italic;
+}
+#pane-pti-events .views-field-view-node a {
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#pane-pti-events .views-field-view-node a:after {
+    content: ' \00BB';
+}
+
+#pane-media-contact {
+    color: white;
+}
+#pane-media-contact span {
+    display: block;
+    font-size: 0.8em;
+}
+
+#d2i-sponsor-footer-pane {
+    position: relative;
+    height: 105px;
+}
+
+#d2i-sponsor-footer {
+    position: absolute;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    width: 797px;
+    padding-left: 3px;
+}
+
+#d2i-sponsor-footer p {
+    color: white;
+    font-size: 1.00em;
+    font-weight: bold;
+    margin: 10px 10px 0px 10px;
+}
+
+#d2i-sponsor-footer img {
+    margin: 10px 0px 10px 4px;
+    background-color: white;
+}
+
+#d2i-sponsor-footer #d2i-nsf-logo {
+    margin-left: 75px;
+}
+
+#footer {
+    width: 800px;
+    margin: 0 auto 0 auto;
+    padding: 0px;
+}
+#footer > #block-iu {
+    display: inline;
+    float: none;
+    margin: 0px;
+}
+#footer > #block-iu > a {
+    padding: 5px;
+}
+
+#footer > #copyright {
+    display: inline;
+}
+#footer > #copyright > p {
+    padding: 12px; 0px; 0px; 0px;
+}
+
+.ddblock-number-pager a {
+    background-color: #F6ADAA;
+}
+.ddblock-number-pager a.activeSlide {
+    background-color: #7D110C;
+}
+
+/* Image and Video Lists */
+.pane-node-content .view-id-videomedia.view-display-id-block_4 .views-row,
+.pane-node-content .view-id-pti_image_gallery.view-display-id-block_1 .views-row,
+.pane-node-content .view-id-pti_image_gallery_view.view-display-id-image_gallery_1 .views-row {
+    width: 580px;
+}
+
+.view-id-videomedia.view-display-id-block_4 .views-row,
+.view-id-pti_image_gallery.view-display-id-block_1 .views-row,
+.view-id-pti_image_gallery_view.view-display-id-image_gallery_1 .views-row {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #D6D6D6;
+}
+.view-id-videomedia.view-display-id-block_4 .views-row-last,
+.view-id-pti_image_gallery.view-display-id-block_1 .views-row-last,
+.view-id-pti_image_gallery_view.view-display-id-image_gallery_1 .views-row-last {
+    border-bottom: 0px;
+}
+
+.view-id-videomedia.view-display-id-block_4 .views-row:after,
+.view-id-pti_image_gallery.view-display-id-block_1 .views-row:after,
+.view-id-pti_image_gallery_view.view-display-id-image_gallery_1 .views-row:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;    
+}
+
+.view-id-videomedia.view-display-id-block_4 .views-field-nothing,
+.view-id-pti_image_gallery.view-display-id-block_1 .views-field-image-gallery-latest-thumbnail-1,
+.view-id-pti_image_gallery_view.view-display-id-image_gallery_1 .views-field-image-image {
+    float: left;
+    margin-right: 10px;
+}
+
+/* Trying to keep the three columns on the gallery at the same height. */
+.panel-pti-gallery .view-videomedia, .panel-pti-gallery .view-pti-image-gallery {
+    min-height: 720px;
+}
+
+/* The following puts the "Original Image" link on the bottom right corner of the row */
+.view-display-id-image_gallery_1 .views-row {
+    position: relative;
+}
+.view-display-id-image_gallery_1 .views-field-filepath {
+    position: absolute;
+    bottom: 10px;
+    right: -10px;
+}
+
+.edit-hide {
+	display: none;
+}
+
+.views-row:hover .edit-hide {
+    font-size: 0.5em;
+	display: block;
+}
+
+/* CampusBridging stuff below.... */
+.view-cbpapers h2 {
+    font-size: 1em;
+}
+.view-cbpapers .field-label,
+.view-cbpapers .field-items,
+.view-cbpapers .field-item,
+.view-cbpapers .filefield-file {
+    font-size: 12px;
+    display: inline;
+}
+.view-cbpapers .content {
+    font-size: 12px;
+}
+.view-cbpapers .filefield-file a,
+.view-cbpapers .comment_add a {
+    font-size: 0.75em;
+}
+
+#node-14750 {
+    width: 580px;
+}
+
+#node-14750 fieldset.collapsible, #node-14750 .teaser-checkbox {
+    display: none;
+}
+
+/* EOT Events List */
+.view-pti-events.view-display-id-block_5 .views-row {
+    font-size: small;
+    margin-bottom: 10px;
+}
